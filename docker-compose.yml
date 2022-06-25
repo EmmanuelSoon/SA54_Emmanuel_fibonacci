@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    # volumes:
+    #   - ./api:/fibonacci/
+    ports:
+      - "8080:8080"
+
+  react:
+    build:
+      context: .
+      dockerfile: ./frontend/Dockerfile
+    volumes:
+      - ./react:/fibonacci/frontend
+    ports:
+      - "3000:3000"
+    links:
+      - api

@@ -1,0 +1,6 @@
+emman\fibonacci\api\Body.class
+emman\fibonacci\api\health\Healthcheck.class
+emman\fibonacci\resources\FibonacciResource.class
+emman\fibonacci\configuration\BasicConfiguration.class
+emman\fibonacci\FibonacciApplication.class
+emman\fibonacci\api\Data.class
